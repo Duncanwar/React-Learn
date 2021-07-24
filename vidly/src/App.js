@@ -1,10 +1,11 @@
 import './App.css';
+import Movies from './movies';
 
 function App() {
   return (
-    <main className="container">
-      Hello World
-   </main>
+     <div className="container">
+       <Movies />
+     </div>
   );
 }
 
