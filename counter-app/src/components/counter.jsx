@@ -6,7 +6,7 @@ class Counter extends Component {
         return (
             <div className="row">
                 <div className="col-1">
- <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
+                <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
                 </div>
                 <div className="col">
                      <button
