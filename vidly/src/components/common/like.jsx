@@ -1,5 +1,6 @@
 import React from 'react';
-const Like = (props) => {
+
+const Like = props => {
         let classes = "fa fa-heart";
         if(!props.liked) classes += "-o"
         return <i
@@ -8,7 +9,5 @@ const Like = (props) => {
             className={classes} 
             aria-hidden="true"></i>
         }
- 
 
- 
 export default Like;
