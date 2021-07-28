@@ -32,7 +32,6 @@ const NavBar = ({ user }) => {
           </NavLink>
           {!user && (
             <>
-              {console.log(user)}
               <NavLink to="/login" className="nav-item nav-link">
                 Login
               </NavLink>
@@ -43,7 +42,6 @@ const NavBar = ({ user }) => {
           )}
           {user && (
             <>
-              {console.log(user)}
               <NavLink to="/profile" className="nav-item nav-link">
                 {user.name}
               </NavLink>

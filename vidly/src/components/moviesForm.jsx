@@ -14,12 +14,12 @@ class MoviesForm extends Form {
     _id: Joi.string(),
     title: Joi.string().required().label("Title"),
     genreId: Joi.string().required().label("Genre"),
-    numberInStock: Joi.string()
+    numberInStock: Joi.number()
       .required()
       .min(0)
       .max(100)
       .label("Number in Stock"),
-    dailyRentalRate: Joi.string()
+    dailyRentalRate: Joi.number()
       .required()
       .min(0)
       .max(10)
