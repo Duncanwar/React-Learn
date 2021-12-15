@@ -14,7 +14,7 @@ import auth from "./services/authService";
 import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
 import ProtectedRoute from "./components/common/protectedRoute";
-import useDeviceDetect from "./utils/useDeviceDetect";
+
 class App extends Component {
   state = {};
   componentDidMount() {
@@ -22,12 +22,10 @@ class App extends Component {
     this.setState({ user });
   }
   render() {
-    // const {isMobile} = this.useDeviceDetect();
     const { user } = this.state;
     return (
       <>
         <ToastContainer />
-        {/* {!isMobile && user} */}
         <Navbar user={user} />
         <main className="container">
           <Switch>

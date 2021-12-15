@@ -1,5 +1,5 @@
 import { apiEndpoint } from "../utils/config.json";
-import http from "../utils/httpService";
+  import http from "../utils/httpService";
 
 const apiUrl = apiEndpoint + "/users";
 

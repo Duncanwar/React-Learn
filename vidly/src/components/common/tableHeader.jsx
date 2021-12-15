@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 
 class TableHeader extends Component {
      raiseSort = path => {
-        const sortColumn = { ...this.props.sortColumn }
+         const sortColumn = { ...this.props.sortColumn }
+
         if (sortColumn.path === path)
             sortColumn.order = (sortColumn.order === 'asc') ? 'desc' : 'asc'
         else {
